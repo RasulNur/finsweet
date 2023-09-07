@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.join-us {
+    margin: 128px 0;
+    @media (max-width: 992px) {
+        margin: 80px 0;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        width: 415px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        @media (max-width: 450px) {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        @include heading2;
+        @media (max-width: 767px) {
+            @include heading3;
+        }
+    }
+
+    &__text {
+        @include body1;
+        color: $color5;
+        margin-bottom: 16px;
+    }
+
+    &__btn {
+        @include button;
+    }
+}

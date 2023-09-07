@@ -1,0 +1,103 @@
+@import "../../variables.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 0;
+    background: $color1;
+    z-index: 2;
+    @media (max-width: 992px) {
+        min-height: 55px;
+    }
+    &__wrapper {
+        @include dflex;
+        gap: 40px;
+    }
+
+    &__logo {
+        width: 140px;
+    }
+
+    &__nav {
+        @include dflex;
+        gap: 32px;
+
+        @media (max-width: 992px) {
+            position: fixed;
+            left: -100%;
+            top: 55px;
+            gap: 24;
+            flex-direction: column;
+            background-color: $color1;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            z-index: 1;
+            opacity: 0;
+            padding: 20px 0;
+
+            &.active {
+                left: 0%;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__list {
+        @include dflex;
+        gap: 24px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    &__list-link {
+        color: $color9;
+        font-family: Inter;
+        @media (min-width: 993px) {
+            &:hover {
+                color: #e1dbdb;
+            }
+        }
+    }
+
+    &__nav-btn {
+        @include button;
+        background: $color9;
+
+        @media (min-width: 993px) {
+            &:hover {
+                background-color: $color6;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        cursor: pointer;
+        @media (max-width: 992px) {
+            display: block;
+
+            &.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            &.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            &.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+
+    &__bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3 ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+}

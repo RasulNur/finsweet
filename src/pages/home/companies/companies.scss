@@ -1,0 +1,21 @@
+@import "../../../variables.scss";
+
+.companies {
+    margin-top: 96px;
+    @media (max-width: 992px) {
+        margin-top: 80px;
+    }
+    &__list {
+        @include dflex;
+        gap: 40px;
+        flex-wrap: wrap;
+        @media (max-width: 1120px) {
+            justify-content: space-around;
+        }
+    }
+
+    &__img {
+        min-width: 135px;
+        max-width: 160px;
+    }
+}

@@ -1,0 +1,111 @@
+// Colors
+$color1: #232536;
+$color2: #ffd050;
+$color3: #592ea9;
+$color4: #4c4c4c;
+$color5: #6d6e76;
+$color6: #f4f4f4;
+$color7: #f4f0f8;
+$color8: #fbf6ea;
+$color9: #fff;
+
+// Fonts
+@mixin display {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+@mixin heading1 {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+@mixin heading2 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+@mixin heading3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+@mixin heading4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+@mixin heading5 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+}
+@mixin heading6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+@mixin body1 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: Inter;
+}
+@mixin body2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: Inter;
+}
+@mixin label {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+@mixin cap1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+@mixin cap2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@mixin button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 48px;
+    background-color: $color2;
+    color: $color1;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #edc14a;
+    }
+}
+
+// Mixins
+@mixin dflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

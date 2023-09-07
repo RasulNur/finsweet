@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import "./variables.scss";
+
+*,
+*:before,
+*:after {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: $color1;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+// li
+
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Sen", sans-serif;
+    @include body1;
+    color: $color1;
+}
+button {
+    cursor: pointer;
+}
+
+button,
+img {
+    user-select: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: content-box;
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+}

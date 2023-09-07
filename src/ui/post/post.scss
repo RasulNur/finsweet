@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+.post {
+    @include dflex;
+    gap: 32px;
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    &__img-link {
+        max-width: 490px;
+        width: 100%;
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        @media (max-width: 992px) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__content {
+    }
+
+    &__subheading {
+        margin-bottom: 16px;
+        @include cap1;
+        color: $color3;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        @include heading2;
+
+        color: $color1;
+        @media (max-width: 500px) {
+            @include heading3;
+        }
+    }
+
+    &__text {
+        @include body1;
+        color: $color5;
+    }
+}

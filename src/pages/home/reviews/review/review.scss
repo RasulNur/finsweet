@@ -1,0 +1,44 @@
+@import "../../../../variables.scss";
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+    @media (max-width: 992px) {
+        gap: 50px;
+    }
+    @media (max-width: 490px) {
+        gap: 25px;
+    }
+
+    &__text {
+        @include heading4;
+        @media (max-width: 620px) {
+            @include heading5;
+        }
+    }
+
+    &__author {
+        @include dflex;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    &__author-img {
+    }
+
+    &__author-info {
+    }
+
+    &__author-name {
+        @include heading4;
+        @media (max-width: 620px) {
+            @include heading5;
+        }
+    }
+
+    &__author-address {
+        @include body1;
+        color: $color5;
+    }
+}

@@ -1,0 +1,109 @@
+@import "../../../variables.scss";
+
+.article {
+    padding: 128px 0 0 0;
+    @media (max-width: 992px) {
+        padding: 60px 0 0 0;
+    }
+    &__header {
+        margin-bottom: 64px;
+        padding: 0 256px;
+        @media (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    &__author {
+        @include dflex;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    &__author-info {
+    }
+
+    &__author-name {
+        color: $color3;
+        @include heading3;
+    }
+
+    &__author-posted {
+        color: $color5;
+        @include body1;
+    }
+
+    &__heading {
+        @include heading1;
+
+        margin-bottom: 34px;
+        @media (max-width: 767px) {
+            @include heading2;
+        }
+        @media (max-width: 440px) {
+        }
+    }
+
+    &__tag {
+        @include dflex;
+        justify-content: flex-start;
+        gap: 8px;
+        @include heading4;
+    }
+
+    &__tag-img {
+        width: 24px;
+        width: 24px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 64px;
+        @media (max-width: 767px) {
+            margin-bottom: 34px;
+            min-height: 250px;
+            object-fit: cover;
+        }
+        @media (max-width: 430px) {
+            object-position: 70%;
+        }
+    }
+
+    &__content {
+        padding: 0 256px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        @media (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    &__content-section {
+        // margin-top: 48px;
+    }
+
+    &__content-heading {
+        @include heading2;
+
+        @media (max-width: 767px) {
+            @include heading3;
+        }
+    }
+
+    &__content-text {
+        @include body1;
+        color: $color5;
+        margin-top: 24px;
+    }
+
+    &__content-list {
+        margin-top: 24px;
+        list-style: disc inside !important;
+    }
+
+    &__content-list-item {
+        @include heading4;
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.categories {
+    margin-top: 128px;
+    @media (max-width: 992px) {
+        margin-top: 80px;
+    }
+
+    &__heading {
+        @include heading2;
+        margin-bottom: 48px;
+        @media (max-width: 767px) {
+            @include heading3;
+        }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        @media (max-width: 1271px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

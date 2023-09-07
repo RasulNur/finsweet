@@ -1,0 +1,44 @@
+@import "../../../../variables.scss";
+
+.featured-card {
+    padding: 32px;
+    border: 1px solid #6d6e7629;
+    @media (max-width: 500px) {
+        border: none;
+        padding: 0px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__created {
+        color: $color4;
+        @include label;
+        span {
+            color: $color3;
+        }
+    }
+
+    &__heading {
+        @include heading3;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        color: $color5;
+        font-family: Inter;
+    }
+
+    &__btn {
+        @include button;
+    }
+}

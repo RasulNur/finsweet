@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color6;
+    gap: 20px;
+    padding: 40px;
+    @media (min-width: 993px) {
+        &:hover {
+            background-color: $color8;
+        }
+    }
+    &__name {
+        @include heading3;
+    }
+
+    &__position {
+        margin-top: -20px;
+        @include body2;
+        color: $color5;
+    }
+
+    &__socials {
+        @include dflex;
+        gap: 16px;
+
+        a {
+            color: $color1;
+        }
+    }
+}

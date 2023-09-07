@@ -1,0 +1,39 @@
+@import "../../../../variables.scss";
+.category-page-card {
+    @include dflex;
+    gap: 32px;
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__img-link {
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @media (max-width: 700px) {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    &__subheading {
+        @include cap1;
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        @include heading2;
+        margin-bottom: 16px;
+        @media (max-width: 450px) {
+            @include heading3;
+        }
+    }
+
+    &__text {
+        @include body1;
+    }
+}

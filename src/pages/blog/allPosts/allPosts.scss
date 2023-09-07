@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.all-posts {
+    margin-top: 64px;
+    &__heading {
+        @include heading1;
+        margin-bottom: 32px;
+        @media (max-width: 500px) {
+            @include heading1;
+        }
+    }
+
+    &__row {
+        border-top: 1px solid rgba(109, 110, 118, 0.3);
+        padding-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        margin-bottom: 64px;
+    }
+
+    &__pagination {
+        position: relative;
+        @include dflex;
+        justify-content: center;
+        gap: 17px;
+        height: 40px;
+    }
+
+    &__pagination-btn {
+        background-color: inherit;
+        text-align: center;
+        color: $color5;
+        @include heading4;
+        transition: all 0.3s;
+        @media (min-width: 993px) {
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+}

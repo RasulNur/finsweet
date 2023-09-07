@@ -1,0 +1,63 @@
+@import "../../../variables.scss";
+
+.introduction {
+    color: $color9;
+    padding: 128px 0 192px;
+    background: url("../../../public/introduction-bg.png") no-repeat center;
+    background-size: cover;
+    font-family: Inter;
+
+    @media (max-width: 992px) {
+        padding: 60px 0 100px;
+    }
+
+    &__subheading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        span {
+            font-weight: 900;
+        }
+    }
+
+    &__heading {
+        width: 798px;
+        @include display;
+        font-family: "Sen", sans-serif;
+        margin-bottom: 24px;
+        @media (max-width: 992px) {
+            width: 100%;
+            @include heading1;
+        }
+        @media (max-width: 580px) {
+            @include heading2;
+        }
+    }
+
+    &__created {
+        margin-bottom: 16px;
+        @include body1;
+    }
+
+    &__author {
+        color: $color2;
+    }
+
+    &__text {
+        width: 599px;
+        margin-bottom: 48px;
+        @media (max-width: 992px) {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        @include button;
+        display: inline-flex;
+        font-family: Sen;
+    }
+}

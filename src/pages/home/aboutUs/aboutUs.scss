@@ -1,0 +1,105 @@
+@import "../../../variables.scss";
+
+.about-us {
+    margin-top: 128px;
+    @media (max-width: 992px) {
+        margin-top: 80px;
+    }
+    @media (max-width: 500px) {
+        background-color: $color7;
+        padding: 40px 0;
+        margin-top: 40px;
+    }
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 82px;
+        background-color: $color7;
+        padding: 96px 108px 96px 80px;
+        @media (min-width: 768px) {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 85%;
+                height: 23px;
+                top: -23px;
+                right: 0;
+                background: linear-gradient(to right, $color2 70%, $color3 30%);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            gap: 45px;
+            padding: 96px 80px;
+        }
+        @media (max-width: 1025px) {
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+        @media (max-width: 767px) {
+            // padding: 76px 60px;
+        }
+        @media (max-width: 600px) {
+            padding: 30px;
+        }
+        @media (max-width: 500px) {
+            background-color: inherit;
+            padding: 0px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+    }
+
+    .subheading {
+        margin-bottom: 8px;
+        @include cap1;
+    }
+
+    &__left-heading {
+        @include heading2;
+        @media (max-width: 1025px) {
+            @include heading3;
+        }
+    }
+
+    &__left-text {
+        @include body1;
+        color: $color5;
+    }
+
+    &__read-more {
+        color: $color3;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+        background-color: inherit;
+        @media (min-width: 993px) {
+            &:hover {
+                color: #4e367a;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+    }
+
+    &__right-heading {
+        @include heading3;
+    }
+
+    &__right-text {
+        @include body1;
+        color: $color5;
+    }
+}

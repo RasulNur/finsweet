@@ -1,0 +1,124 @@
+@import "../../../variables.scss";
+
+.reviews {
+    margin-top: 104px;
+    height: fit-content;
+    @media (max-width: 530px) {
+        background-color: $color8;
+    }
+
+    @media (max-width: 992px) {
+        margin-top: 80px;
+    }
+    &__wrapper {
+        background-color: $color8;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 80px 112px 75px;
+        @media (max-width: 1200px) {
+            padding: 50px;
+        }
+        @media (max-width: 992px) {
+            display: block;
+        }
+        @media (max-width: 530px) {
+            background-color: inherit;
+            padding: 30px;
+        }
+        @media (max-width: 490px) {
+            padding: 20px 0;
+        }
+    }
+
+    &__header {
+        padding: 12px 80px 98px 0;
+        padding-right: 80px;
+        width: 100%;
+        border-right: 1px solid rgba(109, 110, 118, 0.3215686275);
+        @media (max-width: 992px) {
+            border-right: none;
+            border-bottom: 1px solid rgba(109, 110, 118, 0.3215686275);
+            padding: 0 0 50px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 530px) {
+            padding: 0 0 30px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 490px) {
+            padding: 0 0 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subheading {
+        @include cap1;
+        margin-bottom: 12px;
+    }
+
+    &__heading {
+        margin-bottom: 16px;
+        @include heading2;
+        @media (max-width: 620px) {
+            @include heading3;
+        }
+    }
+
+    &__text {
+        @include body1;
+    }
+}
+.swiper {
+    min-height: max-content !important;
+    position: relative;
+}
+
+.swiper-btns {
+    @media (max-width: 490px) {
+        display: none;
+    }
+}
+
+.swiper-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: $color9;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    z-index: 1;
+    margin: 10px 0;
+    @media (max-width: 530px) {
+        font-size: 20px;
+    }
+
+    &:nth-child(1) {
+        position: absolute;
+        bottom: 0;
+        right: 80px;
+        @media (max-width: 992px) {
+            right: 70px;
+        }
+        @media (max-width: 530px) {
+            right: 50px;
+        }
+    }
+    &:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    @media (min-width: 993px) {
+        &:hover {
+            background-color: $color1;
+            color: $color9;
+            margin: 0;
+            padding: 20px;
+        }
+    }
+}

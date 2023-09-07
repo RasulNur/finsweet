@@ -1,0 +1,137 @@
+@import "../../variables.scss";
+
+.footer {
+    background-color: $color1;
+    padding: 60px 0;
+    color: $color9;
+    &__top {
+        @include dflex;
+        gap: 30px;
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        max-width: 140px;
+    }
+
+    &__nav-list {
+        @include dflex;
+        gap: 24px;
+        @media (max-width: 500px) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__nav-item {
+    }
+
+    &__nav-link {
+        color: $color9;
+        @include body1;
+        @media (min-width: 993px) {
+            &:hover {
+                color: #e1dbdb;
+            }
+        }
+    }
+
+    &__subscribe {
+        margin-top: 54px;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 80px 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 64px;
+        @media (max-width: 1200px) {
+            gap: 30px;
+        }
+        @media (max-width: 1060px) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width: 992px) {
+            padding: 64px 40px;
+        }
+        @media (max-width: 500px) {
+            padding: 50px 15px;
+            margin: 54px -15px 0;
+        }
+    }
+
+    &__subscribe-heading {
+        @include heading2;
+        @media (max-width: 1200px) {
+            @include heading3;
+        }
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+    }
+
+    &__form {
+        @include dflex;
+        gap: 24px;
+        @media (max-width: 1060px) {
+            width: 100%;
+        }
+        @media (max-width: 570px) {
+            flex-direction: column;
+        }
+    }
+
+    &__label {
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: inherit;
+        border: 1px solid $color4;
+        padding: 14px 0px 14px 25px;
+        outline: none;
+        color: $color9;
+        @include body1;
+    }
+
+    &__btn {
+        @include button;
+    }
+
+    &__bottom {
+        margin-top: 48px;
+        @include dflex;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__contacts {
+        color: $color5;
+        @include body1;
+    }
+
+    &__socials-list {
+        @include dflex;
+        gap: 26px;
+    }
+
+    &__socials-item {
+    }
+
+    &__social-link {
+        color: $color5;
+        @media (min-width: 993px) {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    &__social-img {
+    }
+}
