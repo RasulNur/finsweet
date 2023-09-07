@@ -1,5 +1,5 @@
 import { FC } from "react";
-import FeaturedPostImg from "../../../../public/featuredPost.png";
+import FeaturedPostImg from "../../../img/featuredPost.png";
 import { FaAngleRight } from "react-icons/fa";
 import "./featuredPost.scss";
 import { Link } from "react-router-dom";

@@ -6,34 +6,34 @@ const AllPosts: FC = () => {
         {
             subheading: "Startup",
             heading: "Design tips for designers that cover everything you need",
-            img: "../../../../public/all-posts/post1.png",
+            img: "../../../img/all-posts/post1.png",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         },
 
         {
             subheading: "BUSINESS",
             heading: "How to build rapport with your web design clients",
-            img: "../../../../public/all-posts/post2.png",
+            img: "../../../img/all-posts/post2.png",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         },
 
         {
             subheading: "Startup",
             heading: "Logo design trends to avoid in 2022",
-            img: "../../../../public/all-posts/post3.png",
+            img: "../../../img/all-posts/post3.png",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         },
 
         {
             subheading: "TECHNOLOGY",
             heading: "8 Figma design systems you can download for free today",
-            img: "../../../../public/all-posts/post4.png",
+            img: "../../../img/all-posts/post4.png",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         },
         {
             subheading: "ECONOMY",
             heading: "Font sizes in UI design: The complete guide to follow",
-            img: "../../../../public/all-posts/post5.png",
+            img: "../../../img/all-posts/post5.png",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
         },
     ];

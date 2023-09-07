@@ -1,5 +1,5 @@
 import { FC } from "react";
-import CategoryPageImg from "../../../../../public/category-page-img.png";
+import CategoryPageImg from "../../../../img/category-page-img.png";
 import "./categoryPageCard.scss";
 import { Link } from "react-router-dom";
 interface ICategoryPageCardProps {

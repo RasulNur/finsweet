@@ -7,13 +7,13 @@ const AuthorPagePosts: FC = () => {
             subheading: "BUSINESS",
             heading: "Font sizes in UI design: The complete guide to follow",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            img: "../../../../public/author-page/01.png",
+            img: "../../../img/author-page/01.png",
         },
         {
             subheading: "ECONOMY",
             heading: "How to build rapport with your web design clients",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            img: "../../../../public/author-page/02.png",
+            img: "../../../img/author-page/02.png",
         },
     ];
     return (

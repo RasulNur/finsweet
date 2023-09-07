@@ -1,5 +1,6 @@
 import { FC } from "react";
-import WhyStartedImg from "../../../../public/why-started.png";
+
+import WhyStartedImg from "../../../img/why-started.png";
 import "./whyStarted.scss";
 const WhyStarted: FC = () => {
     return (

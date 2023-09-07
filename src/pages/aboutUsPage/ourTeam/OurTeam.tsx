@@ -1,5 +1,6 @@
 import { FC } from "react";
-import OurTeamImg from "../../../../public/our-team.png";
+import OurTeamImg from "../../../img/our-team.png";
+
 import "./ourTeam.scss";
 const OurTeam: FC = () => {
     return (

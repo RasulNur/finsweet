@@ -1,7 +1,7 @@
 import { FC } from "react";
-import AuthorImg from "../../../../public/review-img.png";
-import TagImg from "../../../../public/blog-post-tag.png";
-import ArticleImg from "../../../../public/article-img.png";
+import AuthorImg from "../../../img/review-img.png";
+import TagImg from "../../../img/blog-post-tag.png";
+import ArticleImg from "../../../img/article-img.png";
 import "./article.scss";
 const Article: FC = () => {
     return (

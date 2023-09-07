@@ -1,5 +1,5 @@
 import { FC } from "react";
-import OutStoryBg from "../../../../public/our-story.png";
+import OutStoryBg from "../../../img/our-story.png";
 import { FaAngleRight } from "react-icons/fa";
 
 import "./ourStory.scss";

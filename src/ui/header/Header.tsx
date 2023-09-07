@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../../public/logo.svg";
+import Logo from "../../img/logo.svg";
 import "./header.scss";
 const Header: FC = () => {
     const [isActive, setIsActive] = useState<boolean>(false);

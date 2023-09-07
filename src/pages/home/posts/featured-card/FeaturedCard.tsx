@@ -1,4 +1,4 @@
-import FeaturedImg from "../../../../../public/featured-img.png";
+import FeaturedImg from "../../../../img/featured-img.png";
 import { FC } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import "./featured-card.scss";

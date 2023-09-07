@@ -9,42 +9,42 @@ const Authors: FC<IAuthorsProps> = ({ count }) => {
         {
             name: "Floyd Miles",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author1.png",
+            img: "../../img/authors/author1.png",
         },
         {
             name: "Dianne Russell",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author2.png",
+            img: "../../img/authors/author2.png",
         },
         {
             name: "Jenny Wilson",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author3.png",
+            img: "../../img/authors/author3.png",
         },
         {
             name: "Leslie Alexander",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author4.png",
+            img: "../../img/authors/author4.png",
         },
         {
             name: "Guy Hawkins",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author5.png",
+            img: "../../img/authors/author5.png",
         },
         {
             name: "Eleanor Pena",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author6.png",
+            img: "../../img/authors/author6.png",
         },
         {
             name: "Robert Fox",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author7.png",
+            img: "../../img/authors/author7.png",
         },
         {
             name: "Jacob Jones",
             postion: "Content Writer @Company",
-            img: "../../../../public/authors/author8.png",
+            img: "../../img/authors/author8.png",
         },
     ];
     return (

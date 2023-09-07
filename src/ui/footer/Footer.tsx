@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../../public/logo.svg";
+import Logo from "../../img/logo.svg";
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import "./footer.scss";
 const Footer: FC = () => {

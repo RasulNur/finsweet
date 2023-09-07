@@ -4,19 +4,20 @@ const CategoryFilter: FC = () => {
     const categoriesData = [
         {
             heading: "Business",
-            icon: "../../../public/category/category1.png",
+
+            icon: "../../../img/category/category1.png",
         },
         {
             heading: "Startup",
-            icon: "../../../public/category/category2.png",
+            icon: "../../../img/category/category2.png",
         },
         {
             heading: "Economy",
-            icon: "../../../public/category/category3.png",
+            icon: "../../../img/category/category3.png",
         },
         {
             heading: "Technology",
-            icon: "../../../public/category/category4.png",
+            icon: "../../../img/category/category4.png",
         },
     ];
 

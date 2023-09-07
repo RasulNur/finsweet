@@ -3,12 +3,12 @@ import { FC } from "react";
 import "./companies.scss";
 const Companies: FC = () => {
     const companiesData = [
-        { img: "../../../../public/companies/01.png" },
-        { img: "../../../../public/companies/02.png" },
-        { img: "../../../../public/companies/03.png" },
-        { img: "../../../../public/companies/04.png" },
-        { img: "../../../../public/companies/05.png" },
-        { img: "../../../../public/companies/06.png" },
+        { img: "../../../img/companies/01.png" },
+        { img: "../../../img/companies/02.png" },
+        { img: "../../../img/companies/03.png" },
+        { img: "../../../img/companies/04.png" },
+        { img: "../../../img/companies/05.png" },
+        { img: "../../../img/companies/06.png" },
     ];
     return (
         <div className="companies">

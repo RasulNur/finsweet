@@ -1,5 +1,5 @@
 import { FC } from "react";
-import HeaderImg from "../../../../public/author-page-img.png";
+import HeaderImg from "../../../img/author-page-img.png";
 import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 

@@ -1,8 +1,6 @@
 import { FC } from "react";
 import "./readNextCard.scss";
-// import ReadNextImg1 from "../../../../../public/read-next/01.png";
-// import ReadNextImg2 from "../../../../../public/read-next/02.png";
-// import ReadNextImg3 from "../../../../../public/read-next/03.png";
+
 import { Link } from "react-router-dom";
 interface IReadNextCardProps {
     img: string;

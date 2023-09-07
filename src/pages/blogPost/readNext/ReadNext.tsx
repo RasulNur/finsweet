@@ -3,10 +3,10 @@ import "./readNext.scss";
 import ReadNextCard from "./readNextCard/ReadNextCard";
 const ReadNext: FC = () => {
     const cardsData = [
-        { img: "../../../../public/read-next/01.png" },
-        { img: "../../../../public/read-next/02.png" },
-        { img: "../../../../public/read-next/03.png" },
-        { img: "../../../../public/read-next/01.png" },
+        { img: "../../../img/read-next/01.png" },
+        { img: "../../../img/read-next/02.png" },
+        { img: "../../../img/read-next/03.png" },
+        { img: "../../../img/read-next/01.png" },
     ];
     return (
         <section className="read-next">

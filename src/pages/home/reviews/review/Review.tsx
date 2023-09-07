@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ReviewImg from "../../../../../public/review-img.png";
+import ReviewImg from "../../../../img/review-img.png";
 import "./review.scss";
 const Review: FC = () => {
     return (

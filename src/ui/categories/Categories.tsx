@@ -12,22 +12,22 @@ const Categories: FC<ICategoriesProps> = ({ heading, headingCenter }) => {
         {
             heading: "Business",
             text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            icon: "../../../public/category/category1.png",
+            icon: "../../img/category/category1.png",
         },
         {
             heading: "Startup",
             text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            icon: "../../../public/category/category2.png",
+            icon: "../../img/category/category2.png",
         },
         {
             heading: "Economy",
             text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            icon: "../../../public/category/category3.png",
+            icon: "../../img/category/category3.png",
         },
         {
             heading: "Technology",
             text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            icon: "../../../public/category/category4.png",
+            icon: "../../img/category/category4.png",
         },
     ];
     return (
